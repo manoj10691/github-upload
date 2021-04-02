@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#E9F3FF</color>
+    <color name="purple_500">#E9F3FF</color>
+    <color name="purple_700">#447CBF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="checkbox">#AFC5EF</color>
+    <color name="edit_text">#4A4A4A</color>
+    <color name="edit_text_hint">#B1B0B0</color>
+    <color name="error">#F43037</color>
+    <color name="pstatus">#FF5C00</color>
+    <color name="edit_text_heading">#2883ED</color>
+    <color name="button_bg">#55CE47</color>
+    <color name="button_bg_otp_disable">#8055CE47</color>
+    <color name="button_bg_disable">#929292</color>
+    <color name="icon">#979797</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="home_title">#8F9EAF</color>
+    <color name="unit_color">#184F8E</color>
+    <color name="home_title_desc">#8EBCF1</color>
+    <color name="home_bg">#F2F5F9</color>
+    <color name="home_status">#B3FFFFFF</color>
+    <color name="startv_bottom">#CADEF7</color>
+    <color name="sv_background_color">#8B9FB0</color>
+    <color name="sv_step_color">#57a8e7</color>
+</resources>

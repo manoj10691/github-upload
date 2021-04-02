@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    tools:context=".survey.StartSurveyActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_bg">
+
+        <RelativeLayout
+            android:id="@+id/rlview"
+            android:layout_width="match_parent"
+            android:layout_height="733dp"
+            android:background="@color/home_bg"
+            android:foregroundGravity="fill_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:elevation="4dp"
+                android:background="@color/white"
+                android:foregroundGravity="top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivulogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginRight="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivulogo"
+                    android:layout_marginTop="14dp"
+                    app:srcCompat="@drawable/line" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/topBar">
+
+                <TextView
+                    android:id="@+id/cong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bivline"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center"
+                    android:text="CONGRATS !!!"
+                    android:textColor="@color/edit_text_heading"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/btitlemorning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cong"
+                    android:gravity="center"
+                    android:text="Lilly Howard"
+                    android:textColor="@color/edit_text_heading"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/btitledate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btitlemorning"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center"
+                    android:text="We are in receipt of your participation."
+                    android:textColor="@color/edit_text_heading"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ltitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btitledate"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:gravity="center_horizontal"
+                    android:text="You have completed  the survey from Paramount.  You will receive an email receipt shortly."
+                    android:textColor="@color/home_title"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/viewres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ltitle"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="View Results"
+                    android:textColor="@color/edit_text_heading"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/botmtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewres"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:gravity="center_horizontal"
+                    android:text="Copyright © 2021 Voting Portals, LLC.
+All Rights Reserved"
+                    android:textColor="@color/edit_text"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/startBtn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_below="@+id/botmtxt"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="43dp"
+                    android:layout_marginRight="43dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Back To Home"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/button_bg" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>

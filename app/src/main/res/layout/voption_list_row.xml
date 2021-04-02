@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="14sp"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vclayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/option_card_bg">
+
+            <RadioButton
+                android:id="@+id/v_select"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/radio_selector"
+                android:buttonTint="@android:color/transparent"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/v_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/v_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:alpha="0.6"
+                android:text="Nataly William"
+                android:textColor="@color/edit_text"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/v_select"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/v_bio"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="16dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="40dp"
+                android:maxHeight="45dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_action_bio" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivulogo"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:maxWidth="45dp"-->
+<!--                android:maxHeight="45dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/ic_action_close"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/txt_name"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="23dp"-->
+            <!--                android:layout_marginTop="35dp"-->
+            <!--                android:text="Annual Election of Directorslo"-->
+            <!--                android:textColor="@color/edit_text_heading"-->
+            <!--                android:textFontWeight="600"-->
+            <!--                android:textSize="16sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/txt_email_id2"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:text="9  days left"-->
+            <!--                android:textColor="@color/home_title_desc"-->
+            <!--                android:textSize="18sp" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Voting Portals</string>
+    <string name="forgot_your_password"><u>Forgot your password?</u></string>
+    <string name="portal_number">Portal Number</string>
+    <string name="enter_portal_number">Enter portal number</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="reset_password_request">Reset Password Request</string>
+    <string name="enter_your_email_address_to_request_a_password_reset">Enter your email address to request a password reset.</string>
+    <string name="email">Email</string>
+    <string name="return_to_login"><u>Return to Login</u></string>
+    <string name="dialogTitle">Logout</string>
+    <string name="dialogMessage">Are you sure?</string>
+    <string name="title_activity_splash_screen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="e_g_john_example_com">e.g. john@example.com</string>
+    <string name="intro_title_1">Step 1. Portal Number</string>
+    <string name="intro_title_2">Step 2. Registered Email</string>
+    <string name="intro_sub_title_1"><![CDATA[Input the portal number in the first field. Your management team sent this via a <b>Welcome Email</b> to your registered email with the association.]]></string>
+    <string name="intro_sub_title_2"><![CDATA[Type the email registered with the association in the second field. Contact your <b>management team</b> if you encounter issues with your email.]]></string>
+    <string name="intro_sub_title_2_sub">In the last field type the password you created and click the login button.</string>
+    <string name="intro_sub_title_2_sub_sub"><![CDATA[If you forgot your password, <b>Forgot Your Password?</b>]]></string>
+    <string name="ballots_and_surveys">Ballots and Surveys</string>
+    <string name="no_ballots_or_surveys_are_currently_open">No Ballots or Surveys are currently Open.</string>
+    <string name="please_check_your_email_or_log_back_in_periodically_to_see_updates">Please check your email or log back in periodically to see updates.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ballot_otp">BallotOtpActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="content_des">PDF PAGE</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_start_voting">StartVotingActivity</string>
+    <string name="start_voting">Start Voting</string>
+    <string name="title_activity_vote_options">VoteOptionsActivity</string>
+    <string name="dated_this_31th">Dated this 31th day of July, 2020</string>
+    <string name="cast_my_vote">Cast my Vote</string>
+    <string name="select_your_candidate_you_can_also_check_his_biography">Select your candidate, You can also check their biography.</string>
+    <string name="exit">Exit</string>
+    <string name="start_survey">Start Survey</string>
+    <string name="back">Back</string>
+    <string name="add_a_comment">Add a Comment</string>
+    <string name="back_to_home">Back To Home</string>
+    <string-array name="titles">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

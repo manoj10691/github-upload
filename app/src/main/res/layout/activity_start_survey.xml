@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    tools:context=".survey.StartSurveyActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_bg">
+
+        <RelativeLayout
+            android:id="@+id/rlview"
+            android:layout_width="match_parent"
+            android:layout_height="733dp"
+            android:background="@color/home_bg"
+            android:foregroundGravity="fill_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="237dp"
+                android:elevation="4dp"
+                android:background="@color/white"
+                android:foregroundGravity="top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivulogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginRight="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivulogo2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="45dp"
+                    android:maxHeight="45dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_action_close"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivulogo"
+                    android:layout_marginTop="14dp"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/titlemorning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivline"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:text="Annual Election of Directors"
+                    android:textColor="@color/home_title"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/titledate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titlemorning"
+                    android:gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="Closes: 2/28/2020"
+                    android:textColor="@color/home_title_desc"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/topBar">
+
+                <ImageView
+                    android:id="@+id/bivline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/btitlemorning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bivline"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:text="Property Survey"
+                    android:textColor="@color/edit_text_heading"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/btitledate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btitlemorning"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Closes: 2/28/2020"
+                    android:textColor="@color/home_title"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ltitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btitledate"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:textColor="@color/edit_text"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/startBtn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="43dp"
+                    android:layout_marginRight="43dp"
+                    android:layout_marginBottom="80dp"
+                    android:background="@drawable/rounded_corners"
+                    android:text="@string/start_survey"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/button_bg" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>

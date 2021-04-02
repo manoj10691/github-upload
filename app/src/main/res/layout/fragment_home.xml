@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:id="@+id/rlview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:foregroundGravity="top"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivulogo"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivulogo"
+                app:srcCompat="@drawable/line" />
+
+            <TextView
+                android:id="@+id/titlemorning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivline"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="Good Afternoon, Lilly"
+                android:textColor="@color/home_title"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/titledate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titlemorning"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="Friday, July 31, 2020"
+                android:textColor="@color/home_title_desc"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topBar"
+            android:layout_marginBottom="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ltitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="@string/ballots_and_surveys"
+                android:textColor="@color/edit_text_heading"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVoting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ltitle"
+                android:visibility="visible" />
+
+            <ScrollView
+                android:id="@+id/rvNoBallet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rvVoting"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/scrv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/nbimv"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ballet" />
+
+                    <TextView
+                        android:id="@+id/nbtitle"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nbimv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/no_ballots_or_surveys_are_currently_open"
+                        android:textColor="@color/edit_text_heading"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/nbdesc"
+                        android:layout_width="269dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nbtitle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="@string/please_check_your_email_or_log_back_in_periodically_to_see_updates"
+                        android:textColor="@color/edit_text"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

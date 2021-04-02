@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".voting.VoteOptionsActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rvCsMcCrTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_25"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:text="Which best describes your relation to this property?"
+                android:textColor="@color/edit_text_heading"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/rvCsMcDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvCsMcCrTitle"
+                android:layout_marginStart="@dimen/margin_25"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:text="A rating of 6 is Very Good a rating of
+1 is Very Poor."
+                android:textColor="@color/home_title"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/rbrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvCsMcDesc"
+                android:layout_margin="@dimen/margin_25"
+                android:visibility="visible">
+
+                <RadioGroup
+                    android:id="@+id/first_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/type1"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/one_r_selector"
+                        android:buttonTint="@android:color/transparent"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:textStyle="normal" />
+
+                    <RadioButton
+                        android:id="@+id/type2"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/two_r_selector"
+                        android:buttonTint="@android:color/transparent"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:textStyle="normal"/>
+
+                    <RadioButton
+                        android:id="@+id/type3"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/three_r_selector"
+                        android:buttonTint="@android:color/transparent"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:textStyle="normal" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/second_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first_group"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/type4"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/four_r_selector"
+                        android:buttonTint="@android:color/transparent"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:textStyle="normal" />
+
+                    <RadioButton
+                        android:id="@+id/type5"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/five_r_selector"
+                        android:buttonTint="@android:color/transparent"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:textStyle="normal" />
+
+                    <RadioButton
+                        android:id="@+id/type6"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/six_r_selector"
+                        android:buttonTint="@android:color/transparent"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:textStyle="normal" />
+                </RadioGroup>
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/edComment"
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:layout_below="@id/rbrl"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/margin_25"
+                android:layout_marginLeft="@dimen/margin_25"
+                android:layout_marginEnd="@dimen/margin_25"
+                android:layout_marginRight="@dimen/margin_25"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/option_card_comment"
+                android:hint="@string/add_a_comment"
+                android:imeOptions="actionDone"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:gravity="top"
+                android:singleLine="false"
+                android:textColor="@color/edit_text"
+                android:textColorHint="@color/edit_text_hint"
+                android:textCursorDrawable="@drawable/edit_text_cursor" />
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edComment"
+                android:layout_marginTop="7dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textColor="@color/edit_text_heading"
+                android:textSize="20sp"
+                android:text="Save" />
+            <TextView
+                android:id="@+id/tvAddComment"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_below="@id/btnSave"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/rectangle_survey"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="20dp"
+                android:gravity="center|start"
+                android:paddingStart="20dp"
+                android:text="@string/add_a_comment"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".voting.VoteOptionsActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_bg">
+
+        <RelativeLayout
+            android:id="@+id/rlview"
+            android:layout_width="match_parent"
+            android:layout_height="733dp"
+            android:background="@color/white"
+            android:foregroundGravity="fill_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:background="@color/white"
+                android:foregroundGravity="top"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/ivulogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="45dp"
+                    android:maxHeight="45dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_action_close"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/titlemorning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivulogo"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:text="Annual Election of Directors"
+                    android:textColor="@color/edit_text_heading"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/titledate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titlemorning"
+                    android:gravity="center"
+                    android:text="Closes: 2/28/2020"
+                    android:textColor="@color/home_title"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/ivline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titledate"
+                    android:layout_margin="14dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="14dp"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/titlebtm"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/ivline"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/home_title"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tbottomBar"
+                android:layout_below="@id/topBar">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvVoting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollingCache="true"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tbottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/castBtn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="43dp"
+                    android:layout_marginRight="43dp"
+                    android:background="@drawable/rounded_corners"
+                    android:text="@string/cast_my_vote"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/button_bg" />
+                <TextView
+                    android:id="@+id/tvbtnstvdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/castBtn"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:gravity="center_horizontal"
+                    android:text="Dated this 31th day of July, 2020"
+                    android:textColor="@color/edit_text"
+                    android:visibility="gone"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvbtnstv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvbtnstvdate"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="45dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/select_your_candidate_you_can_also_check_his_biography"
+                    android:textColor="@color/icon"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>
